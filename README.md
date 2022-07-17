@@ -1,27 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-		<key>UISceneConfigurations</key>
-		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
-			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
-			</array>
-		</dict>
-	</dict>
-    <key>SCSDKClientId</key>
+# SnapChat Login iOS 
+## iOS (Xcode Version 13.2.1 (13C100)
+
+
+Works with Package Manager 
+````
+https://github.com/Snapchat/snap-kit-spm
+
+Version 2.0.0
+````
+
+Add this in Info.plist file
+
+````
+<key>SCSDKClientId</key>
     <string>[YOUR CLIENT ID]</string>
     <key>SCSDKRedirectUrl</key>
     <string>myapp://snap-kit/oauth2</string>
@@ -46,5 +37,9 @@
             </array>
         </dict>
     </array>
-</dict>
-</plist>
+    
+````
+> Give an Star make me Happy :)
+
+ 
+

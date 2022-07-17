@@ -13,6 +13,7 @@
 		6791574F2884BFD700C827B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6791574D2884BFD700C827B9 /* Main.storyboard */; };
 		679157512884BFDB00C827B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 679157502884BFDB00C827B9 /* Assets.xcassets */; };
 		679157542884BFDB00C827B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679157522884BFDB00C827B9 /* LaunchScreen.storyboard */; };
+		679157602884C1D300C827B9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6791575F2884C1D300C827B9 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679157602884C1D300C827B9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SnapChatLogin;
+			packageProductDependencies = (
+				6791575F2884C1D300C827B9 /* SnapKit */,
+			);
 			productName = SnapChatLogin;
 			productReference = 679157442884BFD700C827B9 /* SnapChatLogin.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 6791573B2884BFD700C827B9;
+			packageReferences = (
+				6791575E2884C1D300C827B9 /* XCRemoteSwiftPackageReference "snap-kit-spm" */,
+			);
 			productRefGroup = 679157452884BFD700C827B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6791575E2884C1D300C827B9 /* XCRemoteSwiftPackageReference "snap-kit-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Snapchat/snap-kit-spm";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6791575F2884C1D300C827B9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6791575E2884C1D300C827B9 /* XCRemoteSwiftPackageReference "snap-kit-spm" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6791573C2884BFD700C827B9 /* Project object */;
 }

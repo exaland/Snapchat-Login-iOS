@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SCSDKLoginKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if SCSDKLoginClient.application(app, open: url, options: options) {
+            return true
+        }
+        
+        return false
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
